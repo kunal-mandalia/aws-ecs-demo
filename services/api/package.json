@@ -1,0 +1,13 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kunal Mandalia <kunal.v.mandalia@gmail.com> (http://kunalmandalia.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.16.3"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
