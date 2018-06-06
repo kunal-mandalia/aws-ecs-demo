@@ -1,0 +1,12 @@
+{
+  "name": "aws-ecs-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kunal-mandalia/aws-ecs-demo.git",
+  "author": "Kunal Mandalia <kunal.v.mandalia@gmail.com> (http://kunalmandalia.com/)",
+  "license": "MIT",
+  "scripts": {
+    "compose-dev": "docker-compose -f ./docker-compose.development.yml up",
+    "compose-prod": "docker-compose -f ./docker-compose.production.yml up"
+  }
+}
