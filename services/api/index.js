@@ -7,6 +7,12 @@ app.use(function(req, res, next) {
   next()
 })
 
+app.get('/status', (req, res) => {
+  res.status(200).json({
+    status: "OK"
+  })
+})
+
 app.get('/sayhello', (req, res) => {
   res.status(200).json({
     hello: 'world'
