@@ -6,6 +6,7 @@
   "author": "Kunal Mandalia <kunal.v.mandalia@gmail.com> (http://kunalmandalia.com/)",
   "license": "MIT",
   "scripts": {
+    "build-dev": "./docker-build-dev.sh",
     "compose-dev": "docker-compose -f ./docker-compose.development.yml up",
     "compose-prod": "docker-compose -f ./docker-compose.production.yml up"
   }
