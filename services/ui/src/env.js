@@ -1,3 +1,3 @@
 env = {
-  endpoint: 'API_ENDPOINT'
+  endpoint: 'http://api/sayhello'
 }
