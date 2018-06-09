@@ -1,3 +1,3 @@
 env = {
-  endpoint: 'http://api/sayhello'
+  API_PORT: 5000
 }

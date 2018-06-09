@@ -1,10 +1,8 @@
 console.log("main.js running")
 
 window.onload = function () {
-  const endpoint = env.endpoint === 'API_ENDPOINT'
-    ? 'http://localhost:5000/sayhello'
-    : env.endpoint
-  
+  const { protocol, hostname } = window.location
+  const endpoint = `${protocol}//${hostname}:${env.API_PORT}/sayhello`
   window.fetch(endpoint)
     .then(res => res.json())
     .then(response => {
