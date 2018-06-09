@@ -15,3 +15,16 @@ IAM: Identity access management defines user priviledges
 
 Cluster: tasks run on a cluster; a set of container instances running the AWS container agent
 - config: name, type (e.g. t2.micro), number of instances, key pair (allows SSH access to instance)
+
+
+## Questions
+
+How do services like influx, rabbitmq, etc. have hostnames like http://influxdb? Hosts file, internal to service in /etc dir?
+
+## Setup
+
+1. Create cluster
+2. Push images to ECR
+3. Add service to cluster
+4. Add containers to service. One service can contain many containers, akin to a docker compose
+5. Load balance containers (?)
